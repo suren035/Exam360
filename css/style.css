@@ -1,0 +1,94 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#fbg{
+    padding-top: 30vh;
+    color: rgb(156, 156, 156);
+}
+#fbg h1{
+    font-size: 50px;
+}
+#fbg p{
+    font-size: 22px;
+}
+.count{
+	background: #f5f4f2;
+}
+  .counter {
+    padding: 40px;
+    box-shadow: none;
+	
+	background-color: transparent;
+}
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+	text-align: center;
+	color: #000;
+}
+.count-text {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+	text-align: center;
+	color: #111111;
+}
+.counter i {
+    margin: 0 auto;
+    float: none;
+    display: table;
+	color: #109D58;
+	font-size: 60px;
+    z-index: 1;
+    padding-top: 40px;
+}
+#team {
+	overflow: hidden;
+	transition: 0.6s;
+}
+#team h6{
+    color: #8d6e63;
+}
+#team:hover {
+	background: #acacac;
+    transform: scale(1.06);
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  @media (max-width: 764px)
+  {
+      #fbg h1{
+        font-size: 28px;
+      }
+      #fbg p{
+        font-size: 15px;
+      }
+  }

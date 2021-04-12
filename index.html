@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam360</title><!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="box-shadow: none;height: 100px;">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: 30px;">Exam<span style="color: #b97a56;font-weight: 400;">360</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto" style="font-size: 20px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#offer">Take test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+  <!------------------------ Modal login ----------------------->
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <p class="h4 text-center pt-5">Sign in</p>
+
+    <!--Card content-->
+      <div class="card-body px-5 pt-0">
+    <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="#!">
+    
+          <!-- Email -->
+          <div class="md-form">
+            <input type="email" id="materialLoginFormEmail" class="form-control">
+            <label for="materialLoginFormEmail">E-mail</label>
+          </div>
+    
+          <!-- Password -->
+          <div class="md-form">
+            <input type="password" id="materialLoginFormPassword" class="form-control">
+            <label for="materialLoginFormPassword">Password</label>
+          </div>
+    
+          <div class="d-flex justify-content-around">
+            <div>
+              <!-- Remember me -->
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+                <label class="form-check-label" for="materialLoginFormRemember">Remember me</label>
+              </div>
+            </div>
+            <div>
+              <!-- Forgot password -->
+              <a href="">Forgot password?</a>
+            </div>
+          </div>
+    
+          <!-- Sign in button -->
+          <button class="btn btn-brown btn-lg my-4" type="submit">Sign in</button>
+    
+          <!-- Register -->
+          <p>Not a member?
+            <a href="#" data-toggle="modal" data-target="#modalSigninForm">Register</a>
+          </p>
+    
+          <!-- Social login -->
+          <p>or sign in with:</p>
+          <a type="button" class="btn-floating btn-fb btn-sm"><img src="images/facebook.png" alt="" width="50px"></a>
+            <a type="button" class="btn-floating btn-sm btn-sm"><img src="images/google.png" alt="" width="50px"></a>
+    
+        </form>
+        <!-- Form -->
+    
+      </div>
+      
+
+      </div>
+      
+    </div>
+</div>
+<!------------------------ Modal login ----------------------->
+<!------------------------ Modal sign up ----------------------->
+<div class="modal fade" id="modalSigninForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <p class="h4 text-center pt-5">Sign up</p>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="#!">
+
+            <div class="form-row">
+                <div class="col">
+                    <!-- First name -->
+                    <div class="md-form">
+                        <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                        <label for="materialRegisterFormFirstName">First name</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Last name -->
+                    <div class="md-form">
+                        <input type="email" id="materialRegisterFormLastName" class="form-control">
+                        <label for="materialRegisterFormLastName">Last name</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-mail -->
+            <div class="md-form mt-0">
+                <input type="email" id="materialRegisterFormEmail" class="form-control">
+                <label for="materialRegisterFormEmail">E-mail</label>
+            </div>
+
+            <!-- Password -->
+            <div class="md-form">
+                <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                <label for="materialRegisterFormPassword">Password</label>
+                <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                    At least 8 characters and 1 digit
+                </small>
+            </div>
+
+            <!-- Phone number -->
+            <div class="md-form">
+                <input type="password" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
+                <label for="materialRegisterFormPhone">Phone number</label>
+                <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                    Optional - for two step authentication
+                </small>
+            </div>
+
+           
+
+            <!-- Sign up button -->
+            <button class="btn btn-brown btn-lg my-3" type="submit">Sign in</button>
+
+            <!-- Social register -->
+            <p>or sign up with:</p>
+
+            <a type="button" class="btn-floating btn-fb btn-sm"><img src="images/facebook.png" alt="" width="50px"></a>
+            <a type="button" class="btn-floating btn-sm btn-sm"><img src="images/google.png" alt="" width="50px"></a>
+            <hr>
+
+            <!-- Terms of service -->
+            <p>By clicking
+                <em>Sign up</em> you agree to our
+                <a href="" target="_blank">terms of service</a>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+   
+      
+
+      </div>
+      
+    </div>
+</div>
+<!------------------------ Modal sign up ----------------------->
+    <div class="container" id="fbg">
+        <h1>Your ultimate destination for online assessment</h1>
+        <p>Prepare candidates to perform extraordinarily with an easy to use highly interactive platform and simplify the assessment cycle</p><br>
+        <a href="#" class="btn btn-brown darken-4" data-toggle="modal" data-target="#modalSigninForm">Register now</a>
+    </div>
+    <!-- Core features -->
+<div class="container pb-3" style="padding-top:50vh;">
+    <div class="row row-cols-1 row-cols-md-2 pb-4">
+      <div class="col">
+        <img src="images/mou.JPG" width="300">
+      </div>
+      <div class="col">
+        <center class="pt-2"><h3>Core Features of exam 360 Powerful & Easy to Use, Your Online Exam Partner - exam 360</h3></center>
+        <div class="row pl-5 pt-4">
+          <div class="col">
+            <li>search text</li>
+            <li>complete in time</li>
+            <li>quick result</li>
+          </div>
+          <div class="col pl-5" style="float: right;">
+            <li>24 x 7 open</li>
+            <li>multiple topic</li>
+            <li>multiple tests</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Core features end -->
+  <!-- Cards -->
+<div class="container">
+    <center class="mt-5">
+    <h2>Featured Tests</h2>
+    <p>You are just a single click away to rank yourself in our popular tests - exam 360.</p>
+    </center>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+        <img class="card-img-top" src="images/bank.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="pink-text pb-2 pt-1">Bank PO</h5>
+         </div>
+      </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" src="images/aptitude.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="pink-text pb-2 pt-1">Apptitude Test</h5>
+           </div>
+      
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" src="images/coding.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="pink-text pb-2 pt-1">Coding Test</h5>
+           </div>
+      
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" src="images/php.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="pink-text pb-2 pt-1">PHP Coding</h5>
+           </div>
+      
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" src="images/logic.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="pink-text pb-2 pt-1">Logic Test</h5>
+           </div>
+      
+        </div>
+    </div>
+    </div>
+    <!-- Add Pagination --><br><br>
+    <div class="swiper-pagination"></div>
+  </div>
+  </div>
+  <!-- Cards end -->
+  <!-- --------countdown------- -->
+  <div class="count">
+    <div class="container">
+    <div class="row text-center">
+    <div class="col">
+    <div class="counter">
+    <i class="fas fa-user-graduate"></i>
+    <h2 class="timer count-title count-number" data-to="1230" data-speed="18000"></h2>
+    <p class="count-text ">Happy Students</p>
+    </div>
+    </div>
+    <div class="col">
+    <div class="counter">
+    <i class="fas fa-book"></i>
+    <h2 class="timer count-title count-number" data-to="331" data-speed="15000"></h2>
+    <p class="count-text ">Courses Done</p>
+    </div></div>
+    <div class="col">
+    <div class="counter">
+    <i class="fas fa-database"></i>
+    <h2 class="timer count-title count-number" data-to="8901" data-speed="18000"></h2>
+    <p class="count-text ">Registerations</p>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <!-- countdown ends -->
+  <!-- Teams -->
+  
+    <div class="container mb-5 text-center">
+      <h1 class="section-heading h1 pt-4">Our teams</h1>
+      <div class="row row-cols-2 row-cols-md-4">
+        <div class="col" id="team">
+          <img src="images/team1.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid p-5 pt-5">
+        
+           <h4 class="font-weight-bold dark-grey-text my-2">Surendra</h4>
+            <h6 class="text-uppercase mb-3"><strong>Front-end Developer</strong></h6>
+          
+     </div>
+     <div class="col" id="team">
+    <img src="images/team2.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid p-5 pt-5">
+     <h4 class="font-weight-bold dark-grey-text my-2">Sanket</h4>
+     <h6 class="text-uppercase mb-3"><strong>Back-end Developer</strong></h6>
+  </div>
+  <div class="col" id="team">
+    <img src="images/team3.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid p-5 pt-5">
+     <h4 class="font-weight-bold dark-grey-text my-2">Samata</h4>
+     <h6 class="text-uppercase mb-3"><strong>Back-end Developer</strong></h6>
+  </div>
+  <div class="col" id="team">
+    <img src="images/team4.jpeg" alt="avatar mx-auto white" class="rounded-circle img-fluid p-5 pt-5">
+    <h4 class="font-weight-bold dark-grey-text my-2">Tanmoy</h4>
+    <h6 class="text-uppercase mb-3"><strong>Front-end Developer</strong></h6>
+  </div>
+  
+      </div>
+    </div>
+  
+   
+  <!-- Teams end -->
+<!-- --------offers--------- -->
+<div class="jumbotron blue-grey lighten-5 mb-0" id="offer">
+  <div class="container">
+  
+  <div class="row callout">
+  <div class="col-md-4 text-center">
+  <marquee><h3 style="font-size: 90px"><sup>Rs</sup>399</h3>
+  <h4 style="font-size: 20px;color: #3d3d3d;">Start your awesome test packages today!</h4></marquee>
+  </div>
+  <div class="col-md-8 pt-5 pl-4">
+    <a class="pt-5" href="#" style="text-decoration: none;font-size: 26px;color: #3d3d3d;"><b>Grab the offer, take a test right now </b></a>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- offers end -->
+<!-- footer -->
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+
+        <!-- Form -->
+        <h4 style="color:#fff;">Contact Us</h4>
+  <p class="contact-agile2" style="color:#2abe54; text-align: left;">Sign Up For Our News Letters</p>
+  <form  method="post" name="sentMessage" id="contactForm" >
+  <div class="control-group form-group">
+  <label class="contact-p1">Full Name:</label>
+  <input type="text" class="form-control" name="name" id="name" required >
+  <p class="help-block"></p></div>	
+  <div class="control-group form-group">
+  <label class="contact-p1">Email Address:</label>
+  <input type="email" class="form-control" name="email" id="email" required >
+  <p class="help-block"></p></div>
+  <input type="submit" name="sub" value="Send Now" class="btn btn-success">	
+  </form>
+        <!-- Form -->
+
+      </div>
+     
+      <div class="col-md-6 mb-4 pt-5 text-center">
+
+        <h5>CONTACT INFO</h5>
+               
+  <p style="color:#fff; font-size: 16px"><span>Dial:</span> 892-758-1855</p>
+  <p><span style="color:#fff;">Email: </span> <a href="mailto:info@exam360.com" style="color:#2abe54;">info@exam360.com</a></p>
+
+     
+
+    </div>
+    
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- counter -->
+<script src="js/counter.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!-- swiper js -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // init: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      '@0.00': {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      '@0.75': {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      '@1.00': {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      '@1.50': {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+    }
+  });
+</script>
+</body>
+</html>
